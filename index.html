@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bagikan THR Dong!</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="shortcut icon" href="src/assets/img/2.png" type="image/x-icon">
+ 
+</head>
+<body>
+  <!-- Elemen dekoratif ketupat -->
+  <div class="ketupat-bg one"></div>
+  <div class="ketupat-bg two"></div>
+  
+  <!-- Tombol THR -->
+  <button class="btn-thr" onclick="openModal(); playSound();">
+     THR Dong!
+  </button>
+  
+  <!-- Modal Ucapan Lebaran -->
+  <div class="modal" id="modal">
+    <h2>THR Bagi-Bagi Yuk!</h2>
+    <p>Ayo, bagi THR dong ke gw, tante, oom, dan kawan-kawan buat modal nikahan!</p>
+    <p>Nomor Rekening: <strong>555-***-555 (BCA)</strong></p>
+    <p>A/N: <strong> Muhammad Firman Azhary</strong></p>
+    <button class="close-btn" onclick="closeModal()">Sip, Terima Kasih!</button>
+  </div>
+  
+  <!-- Audio untuk THR -->
+  <audio id="thrAudio">
+    <source src="src/assets/audio/kechang.mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung elemen audio.
+  </audio>
+  
+  <script src="src/js/script.js">
+ 
+  </script>
+  
+</body>
+</html>
